@@ -9,6 +9,7 @@ public class FpsCounter : MonoBehaviour {
     float m_timeCounter = 0.0f;
     float m_lastFramerate = 0.0f;
     public float m_refreshTime = 0.1f;
+    public static string markd;
 
     void Awake()
     {
@@ -30,6 +31,6 @@ public class FpsCounter : MonoBehaviour {
             m_timeCounter = 0.0f;
         }
 
-        mark.text = "FPS: " + Mathf.Round(m_lastFramerate).ToString();
+        mark.text = markd;
     }
 }
